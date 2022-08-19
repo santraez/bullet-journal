@@ -1,0 +1,81 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: v.$palette1-4;
+	width: 245px;
+	.login-form__label {
+		color: v.$palette1-1;
+		font-family: v.$secondary-font;
+		font-size: 2rem;
+		margin: 1.5rem 0 .2rem 1rem;
+	}
+	.login-form__div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 245px;
+		a {
+			font-size: 1.2rem;
+			color: v.$white;
+			padding-right: 1rem;
+		}
+	}
+	.login-form__input {
+		width: 245px;
+		height: 30px;
+		border-radius: 5px;
+		border: 1px solid v.$white;
+		background-color: v.$palette1-3;
+		color: v.$white;
+		font-size: 2rem;
+		padding: 0 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.login-form__submit--container {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 245px;
+		height: 42px;
+		.login-form__submit {
+			width: 245px;
+			height: 42px;
+			font-family: v.$primary-font;
+			font-size: 3.2rem;
+			color: v.$palette1-4;
+			border: 0;
+			border-radius: 5px;
+			&:hover {
+				background-color: v.$palette1-1;
+			}
+			&:active {
+				width: 243px;
+				height: 40px;
+				font-size: 3.1rem;
+			}
+		}	
+	}
+	.login-form__p {
+		font-size: 1.2rem;
+		color: v.$white;
+		width: 245px;
+		text-align: center;
+		margin: 30px 0 0;
+		margin-top: 30px;
+		a {
+			text-decoration: none;
+			color: v.$palette1-1;
+			font-size: 1.3rem;
+		}
+	}
+}

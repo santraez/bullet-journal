@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.colors-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 193px;
+  .colors-bar {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		border: none;
+	}
+}
+.color-a { background-color: red }
+.color-b { background-color: blue }
+.color-c { background-color: green }
+.color-d { background-color: purple }
+.color-e { background-color: yellow }
+.color-f { background-color: black }
+.color-g { background-color: orange }
