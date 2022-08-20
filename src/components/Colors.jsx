@@ -8,14 +8,28 @@ const Colors = () => {
   return (
 		<>
 		<div className="colors-container">
-			<button onClick={selectColor} value='a' className="colors-bar color-a" />
-			<button onClick={selectColor} value='b' className="colors-bar color-b" />
-			<button onClick={selectColor} value='c' className="colors-bar color-c" />
-			<button onClick={selectColor} value='d' className="colors-bar color-d" />
-			<button onClick={selectColor} value='e' className="colors-bar color-e" />
-			<button onClick={selectColor} value='f' className="colors-bar color-f" />
-			<button onClick={selectColor} value='g' className="colors-bar color-g" />
-		</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='a' className="colors-bar color-a" />
+			</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='b' className="colors-bar color-b" />
+			</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='c' className="colors-bar color-c" />
+			</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='d' className="colors-bar color-d" />
+			</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='e' className="colors-bar color-e" />
+			</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='f' className="colors-bar color-f" />
+			</div>
+			<div className="color-box">
+				<button onClick={selectColor} value='g' className="colors-bar color-g" />
+		</div></
+		div>
 		{color}
 		</>
 	);

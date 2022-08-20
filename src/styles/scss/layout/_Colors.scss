@@ -5,12 +5,27 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 193px;
-  .colors-bar {
+	width: 200px;
+	height: 2.5rem;
+	.color-box {
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.colors-bar {
 		width: 2rem;
 		height: 2rem;
 		border-radius: 50%;
 		border: none;
+		padding: 0;
+		margin: 0;
+		&:active {
+			width: 1.8rem;
+			height: 1.8rem;
+		}
 	}
 }
 .color-a { background-color: red }

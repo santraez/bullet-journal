@@ -19,6 +19,7 @@ const Login = () => {
 				type="email"
 				className="login-form__input"
 				name='email'
+				placeholder="Enter your email"
 				id='email' />
 			<div className="login-form__div">
 				<label htmlFor="password" className="login-form__label">
@@ -29,7 +30,8 @@ const Login = () => {
 			<input
 				type="password"
 				className="login-form__input"
-				name="password" 
+				name="password"
+				placeholder="Enter your password" 
 				id="password" />
 			<div className="login-form__submit--container">
 				<input 

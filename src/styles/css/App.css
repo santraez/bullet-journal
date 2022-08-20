@@ -460,13 +460,28 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 193px;
+  width: 200px;
+  height: 2.5rem;
+}
+.colors-container .color-box {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .colors-container .colors-bar {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   border: none;
+  padding: 0;
+  margin: 0;
+}
+.colors-container .colors-bar:active {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .color-a {
@@ -495,6 +510,88 @@ img {
 
 .color-g {
   background-color: orange;
+}
+
+.dark-mode-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+.dark-mode-box .container-dark-mode,
+.dark-mode-box .container-light-mode {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode-box .container-dark-mode {
+  background-color: #000000;
+}
+.dark-mode-box .container-dark-mode .dark-mode {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+.dark-mode-box .container-dark-mode .dark-mode:active {
+  font-size: 2.3rem;
+}
+.dark-mode-box .container-light-mode {
+  background-color: #FFFFFF;
+}
+.dark-mode-box .container-light-mode .light-mode {
+  font-size: 2.5rem;
+}
+.dark-mode-box .container-light-mode .light-mode:active {
+  font-size: 2.3rem;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.calendar-cell__container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 119px;
+  height: 72px;
+}
+.calendar-cell__container .calendar-cell__day {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 16px;
+  background-color: rgba(175, 122, 179, 0.35);
+}
+.calendar-cell__container .calendar-cell__day .calendar-cell__day--default {
+  margin: 0;
+  font-family: "NTR", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 2px;
+  user-select: none;
+}
+.calendar-cell__container .calendar-cell__day .calendar-cell__day--add-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendar-cell__container .calendar-cell__day .calendar-cell__day--add-container .calendar-cell__day--add {
+  width: 95px;
+  height: 16px;
+}
+.calendar-cell__container .calendar-cell__day .calendar-cell__day--add-container p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.calendar-cell__container .calendar-cell__textarea {
+  width: 119px;
+  padding: 0;
+  background-color: red;
 }
 
 /*# sourceMappingURL=App.css.map */
