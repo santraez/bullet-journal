@@ -548,17 +548,17 @@ img {
   font-size: 2.3rem;
 }
 
-.display-none {
-  display: none !important;
-}
-
 .calendar-cell__container {
-  border: 1px solid rgba(0, 0, 0, 0.3);
   width: 119px;
   height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.07);
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
 }
 .calendar-cell__container .calendar-cell__day {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -574,24 +574,78 @@ img {
   padding-top: 2px;
   user-select: none;
 }
-.calendar-cell__container .calendar-cell__day .calendar-cell__day--add-container {
+.calendar-cell__container .calendar-cell__day-tx {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 16px;
+  background-color: rgba(175, 122, 179, 0.35);
 }
-.calendar-cell__container .calendar-cell__day .calendar-cell__day--add-container .calendar-cell__day--add {
-  width: 95px;
+.calendar-cell__container .calendar-cell__day-tx .calendar-cell__day-tx-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 29px;
   height: 16px;
 }
-.calendar-cell__container .calendar-cell__day .calendar-cell__day--add-container p {
+.calendar-cell__container .calendar-cell__day-tx .calendar-cell__day-tx-text p {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2px;
+  user-select: none;
+}
+.calendar-cell__container .calendar-cell__day-tx button {
+  background-color: #E4D192;
+  border: 0;
+  width: 90px;
+  height: 16px;
+  font-family: "NTR", sans-serif;
   font-size: 1.3rem;
-  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.calendar-cell__container .calendar-cell__day-tx button:active {
+  width: 88px;
+  height: 14px;
+  margin: 4px;
+}
+.calendar-cell__container .calendar-cell__show {
+  width: 117px;
+  height: 54px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.calendar-cell__container .calendar-cell__show p {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 .calendar-cell__container .calendar-cell__textarea {
-  width: 119px;
-  padding: 0;
-  background-color: red;
+  width: 117px;
+  height: 54px;
+  padding: 5px;
+  resize: none;
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5rem;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  background-color: transparent;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=App.css.map */
