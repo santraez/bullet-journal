@@ -661,7 +661,7 @@ img {
   width: 420px;
   height: 20px;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   background-color: #E4D192;
 }
@@ -669,9 +669,96 @@ img {
   font-family: "NTR", sans-serif;
   font-size: 2rem;
   color: #FFFFFF;
-  margin: 0;
-  margin-top: 3px;
-  padding-right: 2rem;
+  margin: 3px 0 0 25rem;
+}
+.container-diary-cell .container-diary-cel__content {
+  width: 420px;
+  height: 103px;
+  padding: 0 1rem 0 2rem;
+  margin: 0.7rem 0;
+  overflow-y: scroll;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__content--show {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__content--show p {
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0.3rem 0 0.1rem 0;
+  width: 355px;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__content--show .diary-cel__content--show-asterix {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.5rem;
+}
+.container-diary-cell .container-diary-cel__content .container-icon-cross {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+}
+.container-diary-cell .container-diary-cel__content .container-icon-cross .diary-cel__content--show-cross {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+.container-diary-cell .container-diary-cel__content .container-icon-cross .diary-cel__content--show-cross:active {
+  font-size: 1.2rem;
+}
+.container-diary-cell .container-diary-cel__content .container-icon-cross .diary-cel__content--show-cross:hover {
+  color: rgba(255, 0, 0, 0.5);
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 395px;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__input--show {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__input--show .diary-cel__content--input-asterix {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.5rem;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__input--show p {
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0.3rem 0 0.1rem 0;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__input .diary-cel__content--input-asterix {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 0.5rem;
+}
+.container-diary-cell .container-diary-cel__content .diary-cel__input input {
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: -5px 0;
+  padding: 0;
+  border: none;
+  width: 355px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=App.css.map */
